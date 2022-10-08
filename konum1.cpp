@@ -8,13 +8,13 @@ using namespace std;
 // 3 > if f(x1)*f(xr) < 0 ; xr = x2
 // if f(x1)*f(xr) > 0 ; xr = x1
 // if f(x1)*f(xr) = 0 ; xr = terminated
-void printOutMath(double x) {
+void printOutMath(double x) {  // referred to cubicSeq(x) formula
     cout << "f(x) = " << pow(x, 3) << " + " << pow(x, 2)
          << " - " << (3 * x) << " - "
          << "3" << endl
          << endl;
 }
-void printOutComp(double x, double y) {
+void printOutComp(double x, double y) {  // referred to nonLinear(x,y) formula
     cout << "xr = "
          << x << " + " << y << endl
          << "     -------------" << endl
@@ -45,15 +45,15 @@ int main(int argc, char const *argv[]) {
         } else {
             break;
         }
-        cout << "phase " << i + 1 << ". "
-             << "xr = " << xr << "; f(xr) = "
-             << setprecision(100) << cubicSeq(xr) << endl;
-        // cout << i + 1 << endl;
-        // printOutMath(xr);
-        // cout << "fx) = " << cubicSeq(xr) << endl
-        //      << endl;
-        // printOutComp(x1, x2);
-        // cout << nonLinear(x1, x2) << endl;
+        // cout << "phase " << i + 1 << ". "
+        //      << "xr = " << xr << "; f(xr) = "
+        //      << setprecision(100) << cubicSeq(xr) << endl;
+        cout << i + 1 << endl;
+        printOutMath(xr);
+        cout << "fx) = " << cubicSeq(xr) << endl
+             << endl;
+        printOutComp(x1, x2);
+        cout << setprecision(100) << nonLinear(x1, x2) << endl;
     }
 
     system("pause");
