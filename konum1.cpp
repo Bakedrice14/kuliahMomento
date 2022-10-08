@@ -31,7 +31,7 @@ double cubicSeq(double x) {
 }
 int main(int argc, char const *argv[]) {
     double xr, x1, x2;
-    cin >> x1 >> x2;
+    // cin >> x1 >> x2;
     int n = 19;
     for (int i = 0; i < n; i++) {
     }
