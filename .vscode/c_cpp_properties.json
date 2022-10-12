@@ -11,10 +11,17 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.24.28314/bin/Hostx64/x64/cl.exe",
+            "compilerPath": "C:/TDM-GCC-64/bin/g++.exe",
+            "compilerArgs": [
+                "-libgi",
+                "lgdi32",
+                "lcomdlg32",
+                "luuid",
+                "loleaut32"
+            ],
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "msvc-x64"
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4

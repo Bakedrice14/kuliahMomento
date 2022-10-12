@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+#include <graphics.h>
 #include <math.h>
 
 #include <iomanip>
@@ -10,9 +12,9 @@ using namespace std;
 // if f(x1)*f(xr) = 0 ; xr = xr
 // 4 > if |f(x1)*f(xr) |< epsilon
 void printOutMath(long double x) {  // referred to cubicSeq(x) formula
-    cout << pow(x, 3) << " + " << pow(x, 2)
-         << " - " << (3 * x) << " - "
-         << "3" << endl;
+    cout << tan(x)
+         << " - "
+         << x << " - 1" << endl;
 }
 void printOutComp(long double x, long double y) {  // referred to nonLinear(x,y) formula
     cout << "xr = "
@@ -26,12 +28,12 @@ long double nonLinear(long double x, long double y) {
 }
 long double cubicSeq(long double x) {
     double solution;
-    return solution = (pow(x, 3)) + (pow(x, 2)) - (3 * x) - 3;
+    return solution = tan(x) - x - 1;
 }
 int main(int argc, char const *argv[]) {
     system("cls");
     int i = 0;
-    long double xr, x1 = 1, x2 = 2;
+    long double xr, x1 = 1, x2 = 1.5;
     long double epsilon = 0.05;
     int start = 0;
     int phase = 12;
@@ -95,7 +97,7 @@ int main(int argc, char const *argv[]) {
              << "x2 = " << setprecision(100) << x2 << endl
              << endl;
 
-    } while ((abs(comparison) >= epsilon && comparison != 0) && phase--);
+    } while ((abs(comparison) >= epsilon && comparison != 0) || phase--);
 
     system("pause");
 }
