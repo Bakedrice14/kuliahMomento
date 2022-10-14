@@ -11,7 +11,7 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/TDM-GCC-64/bin/g++.exe",
+            "compilerPath": "C:/MinGW/bin/gcc.exe",
             "compilerArgs": [
                 "-libgi",
                 "lgdi32",

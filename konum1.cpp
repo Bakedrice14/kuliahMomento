@@ -1,3 +1,4 @@
+#include <Rcpp.h>
 #include <math.h>
 
 #include <iomanip>
@@ -95,7 +96,7 @@ int main(int argc, char const *argv[]) {
              << "x2 = " << setprecision(100) << x2 << endl
              << endl;
 
-    } while ((abs(comparison) >= epsilon && comparison != 0) && phase--);
+    } while ((abs(comparison) > epsilon && comparison != 0) && phase--);
 
     system("pause");
 }
