@@ -11,17 +11,18 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/MinGW/bin/gcc.exe",
+            "compilerPath": "C:/TDM-GCC-64/bin/gcc.exe",
             "compilerArgs": [
                 "-libgi",
-                "lgdi32",
-                "lcomdlg32",
-                "luuid",
-                "loleaut32"
+                "-lgdi32",
+                "-lcomdlg32",
+                "-luuid",
+                "-loleaut32",
+                "-lole32"
             ],
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x86"
         }
     ],
     "version": 4

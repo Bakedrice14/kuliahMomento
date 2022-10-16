@@ -1,16 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// deklarasi struct node
 struct Node {
     int data;
     struct Node* next;
 };
 
-// deklarasi head
 struct Node* head;
 
-// function masukkan
 void Insert(Node** head, int x) {
     struct Node* temp = (Node*)malloc(sizeof(struct Node));
     temp->data = x;
@@ -19,7 +16,6 @@ void Insert(Node** head, int x) {
     *head = temp;
 }
 
-// function keluaran
 void Print(Node* head) {
     cout << "List is: ";
     while (head != NULL) {
@@ -39,5 +35,5 @@ int main() {
         Insert(&head, x);
         Print(head);
     }
-  return 0;
+    return 0;
 }
